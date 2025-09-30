@@ -1,0 +1,29 @@
+{
+  "name": "lending-system",
+  "version": "1.0.0",
+  "description": "Team Asset - Lending System with Message-Oriented Middleware",
+  "main": "src/api/server.js",
+  "scripts": {
+    "start": "node src/api/server.js",
+    "dev": "nodemon src/api/server.js",
+    "producer": "node src/integration/middleware/producer.js",
+    "consumer": "node src/integration/middleware/consumer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lending",
+    "loan",
+    "rabbitmq",
+    "middleware",
+    "rest-api"
+  ],
+  "author": "Team Asset",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
